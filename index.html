@@ -13,13 +13,12 @@
   <script type="text/javascript">
     function showit(a) {
       var x = document.getElementsByClassName("main-art");
-      var j = 0;
+
       for (var i = 0; i < x.length; i++) {
         if (i != a) {
           x[i].style.display = "none";
         } else {
           x[i].style.display = "block";
-          j = i;
         }
       }
     }
@@ -27,14 +26,13 @@
   </script>
   <script type="text/javascript">
     function showbody(a) {
-      var x = document.getElementsByClassName("showme");
-      var j = 0;
+      var x = document.getElementsByClassName("hideme");
+
       for (var i = 0; i < x.length; i++) {
         if (i != a) {
           x[i].style.display = "none";
         } else {
           x[i].style.display = "block";
-          j = i;
         }
       }
     }
@@ -87,27 +85,30 @@
       <article class="main-art">
         <table class="table table-striped">
           <thead>
-            <th colspan="2"><div class="hidden" onclick="showbody(0)"><div>ČIŠĆENJE NAKON GRAĐEVINSKIH I ADAPTCIJSKIH RADOVA</th>
+            <th colspan="2" onclick="showbody(0)">ČIŠĆENJE NAKON GRAĐEVINSKIH I ADAPTCIJSKIH RADOVA</th>
           </thead>
-          <tbody class="showme">
-            <tr>
-              <td>Čišćenje prostora do 500m<sup>2</sup></td>
-              <td>11-22 kn/m<sup>2</sup></td>
-            </tr>
-            <tr>
-              <td>Čišćenje prostora većeg od 500<sup>2</sup></td>
-              <td>8 - 20 kn/m<sup>2</sup></td>
-            </tr>
-          </tbody>
+            <tbody class="hideme">
+              <tr>
+                <td>Čišćenje prostora do 500m<sup>2</sup></td>
+                <td>11-22 kn/m<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td>Čišćenje prostora većeg od 500<sup>2</sup></td>
+                <td>8 - 20 kn/m<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+              </tr>
+            </tbody>
         </table>
       </article>
 
       <article class="main-art">
         <table class="table table-striped">
           <thead>
-            <th colspan="2"><div class="hidden" onclick="showbody(1)"><div>ČIŠĆENJE POSLOVNIH PROSTORA</th>
+            <th colspan="2" onclick="showbody(1)">ČIŠĆENJE POSLOVNIH PROSTORA</th>
           </thead>
-          <tbody class="showme">
+          <tbody class="hideme">
             <tr>
               <td>Generalno čišćenje</td>
               <td>10 – 22 kn po m<sup>2</sup></td>
@@ -146,6 +147,9 @@
               <td>Napredni paket (jednostavna čišćenja, neograničena papirna konfekcija, neograničena kemijska čišćenja, neograničena obrada i održavanje svih podnih površina)</td>
               <td>m<sup>2</sup> = 11 – 15 kn mjesečno</td>
             </tr>
+            <tr>
+              <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+            </tr>
           </tbody>
         </table>
       </article>
@@ -153,9 +157,9 @@
       <article class="main-art">
         <table class="table table-striped">
           <thead>
-            <th colspan="2"><div class="hidden" onclick="showbody(2)"><div>ČIŠĆENJE ULAZA ZGRADA</th>
+            <th colspan="2" onclick="showbody(2)"></div>ČIŠĆENJE ULAZA ZGRADA</th>
           </thead>
-          <tbody class="showme">
+          <tbody class="hideme">
             <th colspan="2">ČIŠĆENJE STUBIŠTA JEDNOM TJEDNO</th>
             <tr>
               <td>Zgrade do 4 kata</td>
@@ -183,6 +187,9 @@
               <td>Zgrade s više od 4 kata</td>
               <td>300 kn</td>
             </tr>
+            <tr>
+              <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+            </tr>
           </tbody>
         </table>
       </article>
@@ -190,9 +197,9 @@
       <article class="main-art">
         <table class="table table-striped">
           <thead>
-            <th colspan="2"><div class="hidden" onclick="showbody(3)"><div>ČIŠĆENJE STANOVA I KUČA</th>
+            <th colspan="2" onclick="showbody(3)">ČIŠĆENJE STANOVA I KUČA</th>
           </thead>
-          <tbody class="showme">
+          <tbody class="hideme">
             <tr>
               <td>Generalno čišćenje</td>
               <td>10 – 22 kn po m<sup>2</sup></td>
@@ -213,6 +220,9 @@
               <td>Pranje prozora</td>
               <td>10 kn po m<sup>2</sup></td>
             </tr>
+            <tr>
+              <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+            </tr>
           </tbody>
         </table>
       </article>
@@ -220,11 +230,11 @@
       <article class="main-art">
         <table class="table table-striped">
           <thead>
-            <th colspan="2"><div class="hidden" onclick="showbody(4)"><div>
+            <th colspan="2" onclick="showbody(4)">
               KEMIJSKO ČIŠĆENJE
             </th>
           </thead>
-          <tbody class="showme">
+          <tbody class="hideme">
             <tr>
               <td>Stolica</td>
               <td>25 kn</td>
@@ -273,8 +283,15 @@
               <td>Sjedišta i unutrašnjost kabine kamiona</td>
               <td>800 kn</td>
             </tr>
+            <tr>
+              <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+            </tr>
           </tbody>
         </table>
+      </article>
+
+      <article class="main-art">
+
       </article>
 
     </div>
