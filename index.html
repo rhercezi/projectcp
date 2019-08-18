@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Cakum Pakum obrt za čišćenje">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cakum Pakum</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="text/javascript">
+    function showit(a) {
+      var x = document.getElementsByClassName("main-art");
+      var j = 0;
+      for (var i = 0; i < x.length; i++) {
+        if (i != a) {
+          x[i].style.display = "none";
+        } else {
+          x[i].style.display = "block";
+          j = i;
+        }
+      }
+    }
+
+  </script>
+  <script type="text/javascript">
+    function showbody(a) {
+      var x = document.getElementsByClassName("showme");
+      var j = 0;
+      for (var i = 0; i < x.length; i++) {
+        if (i != a) {
+          x[i].style.display = "none";
+        } else {
+          x[i].style.display = "block";
+          j = i;
+        }
+      }
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <header class="header-style">
+
+    <img class="logo" src="Pictures/logo_new.png" alt="logo Cakum Pakum">
+
+  </header>
+  <main>
+    <div class="div-l">
+      <ul>
+        <li onclick="showit(0)"><a href="#"><strong>Početna</strong></a></li>
+        <li onclick="showit(6)"><a href="#"><strong>O nama</strong></a></li>
+      </ul>
+      <ul>
+        <li id="usluge"><strong>Usluge:</strong></li>
+        <li>
+          <ul>
+          </ul>
+        <li onclick="showit(1)"><a class="link" href="#">
+            <strong>Čišćenje nakon radova</strong>
+          </a></li>
+        <li onclick="showit(2)"><a class="link" href="#">
+            <strong>Čišćenje poslovnih prostora</strong>
+          </a></li>
+        <li onclick="showit(3)"><a class="link" href="#">
+            <strong>Čišćenje ulaza zgrada</strong>
+          </a></li>
+        <li onclick="showit(4)"><a class="link" href="#">
+            <strong>Čišćenje stanova</strong>
+          </a></li>
+        <li onclick="showit(5)"><a class="link" href="#">
+            <strong>Kemijsko čišćenje</strong>
+          </a></li>
+      </ul>
+      </li>
+      </ul>
+    </div>
+    <div class="div-m">
+      <article class="main-art displ">
+        <img class="im" src="Pictures/water-1759703_1920.jpg" alt="water">
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2"><div class="hidden" onclick="showbody(0)"><div>ČIŠĆENJE NAKON GRAĐEVINSKIH I ADAPTCIJSKIH RADOVA</th>
+          </thead>
+          <tbody class="showme">
+            <tr>
+              <td>Čišćenje prostora do 500m<sup>2</sup></td>
+              <td>11-22 kn/m<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td>Čišćenje prostora većeg od 500<sup>2</sup></td>
+              <td>8 - 20 kn/m<sup>2</sup></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2"><div class="hidden" onclick="showbody(0)"><div>ČIŠĆENJE POSLOVNIH PROSTORA</th>
+          </thead>
+          <tbody class="showme">
+            <tr>
+              <td>Generalno čišćenje</td>
+              <td>10 – 22 kn po m<sup>2</sup></td>
+            </tr>
+          <th colspan="2">ČIŠĆENJE UZ POTPIS UGOVORA</th>
+          <tr>
+            <td>Čišćenje dva puta mjesečno</td>
+            <td>od 600 kn mjesečno</td>
+          </tr>
+          <tr>
+            <td>Čišćenje jednom tjedno</td>
+            <td>od 960 kn mjesečno</td>
+          </tr>
+          <tr>
+            <td>Čišćenje dva puta tjedno</td>
+            <td>od 1440 kn mjesečno</td>
+          </tr>
+          <tr>
+            <td>Čišćenje tri puta tjedno</td>
+            <td>od 2160 kn mjesečno</td>
+          </tr>
+          <tr>
+            <td>Čišćenje pet puta tjedno</td>
+            <td>od 3600 kn mjesečno</td>
+          </tr>
+            <th colspan="2">ČIŠĆENJE POSLOVNIH PROSTORA VEĆIH POVRŠINA</th>
+            <tr>
+              <td>Osnovni paket (jednostavna čišćenja)</td>
+              <td>m<usp>2</usp> = 7 – 9 kn mjesečno<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td>Srednji paket (jednostavna čišćenja, ograničena papirna konfekcija, ograničena kemijska čišćenja i održavanje podnih površina)</td>
+              <td>m<sup>2</sup> = 10 kn mjesečno</td>
+            </tr>
+            <tr>
+              <td>Napredni paket (jednostavna čišćenja, neograničena papirna konfekcija, neograničena kemijska čišćenja, neograničena obrada i održavanje svih podnih površina)</td>
+              <td>m<sup>2</sup> = 11 – 15 kn mjesečno</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2"><div class="hidden" onclick="showbody(0)"><div>ČIŠĆENJE ULAZA ZGRADA</th>
+          </thead>
+          <tbody class="showme">
+            <th colspan="2">ČIŠĆENJE STUBIŠTA JEDNOM TJEDNO</th>
+            <tr>
+              <td>Zgrade do 4 kata</td>
+              <td>Od 400 kn mjesečno</td>
+            </tr>
+            <tr>
+              <td>Zgrade s više od 4 kata</td>
+              <td>Od 20 kn po stanu mjesečno</td>
+            </tr>
+            <th colspan="2">ČIŠĆENJE STUBIŠTA DVA PUTA TJEDNO UZ POTPIS UGOVORA</th>
+            <tr>
+              <td>Zgrade do 4 kata</td>
+              <td>Od 800 kn mjesečno</td>
+            </tr>
+            <tr>
+              <td>Zgrade s više od 4 kata</td>
+              <td>Zgrade s više od 4 kata</td>
+            </tr>
+            <th colspan="2">JEDNOKRATNO ČIŠĆENJE STUBIŠTA</th>
+            <tr>
+              <td>Zgrade do 4 kata</td>
+              <td>200 kn</td>
+            </tr>
+            <tr>
+              <td>Zgrade s više od 4 kata</td>
+              <td>300 kn</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2"><div class="hidden" onclick="showbody(0)"><div>ČIŠĆENJE STANOVA I KUČA</th>
+          </thead>
+          <tbody class="showme">
+            <tr>
+              <td>Generalno čišćenje</td>
+              <td>10 – 22 kn po m<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td>Redovno čišćenje prostora do 45 m<sup>2</sup></td>
+              <td>250 kn po čišćenju</td>
+            </tr>
+            <tr>
+              <td>Redovno čišćenje prostora 45 m<sup>2</sup> – 90 m<sup>2</sup></td>
+              <td>300 kn po čišćenju</td>
+            </tr>
+            <tr>
+              <td>Jednokratno čišćenje</td>
+              <td>75 kn po satu</td>
+            </tr>
+            <tr>
+              <td>Pranje prozora</td>
+              <td>10 kn po m<sup>2</sup></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2"><div class="hidden" onclick="showbody(0)"><div>
+              KEMIJSKO ČIŠĆENJE
+            </th>
+          </thead>
+          <tbody class="showme">
+            <tr>
+              <td>Stolica</td>
+              <td>25 kn</td>
+            </tr>
+            <tr>
+              <td>Tabure</td>
+              <td>50 kn</td>
+            </tr>
+            <tr>
+              <td>Fotelja</td>
+              <td>100 kn</td>
+            </tr>
+            <tr>
+              <td>Dvosjed</td>
+              <td>180 kn</td>
+            </tr>
+            <tr>
+              <td>Trosjed</td>
+              <td>230 kn</td>
+            </tr>
+            <tr>
+              <td>Dječji madrac</td>
+              <td>50 kn</td>
+            </tr>
+            <tr>
+              <td>Madrac za jednu osobu</td>
+              <td>100 kn</td>
+            </tr>
+            <tr>
+              <td>Madrac za dvije osobe</td>
+              <td>200 kn</td>
+            </tr>
+            <tr>
+              <td>Tepih</td>
+              <td>20 kn/m 2 - 50 kn/m 2</td>
+            </tr>
+            <tr>
+              <td>Automobil</td>
+              <td>300 – 500 kn</td>
+            </tr>
+            <tr>
+              <td>Sjedišta i unutrašnjost autobusa</td>
+              <td>3500 kn</td>
+            </tr>
+            <tr>
+              <td>Sjedišta i unutrašnjost kabine kamiona</td>
+              <td>800 kn</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+    </div>
+    <div class="div-r">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1390.5774599220724!2d16.043122725365865!3d45.80834784867217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shr!2shr!4v1565988147902!5m2!1shr!2shr" frameborder="0"
+        style="border:0" allowfullscreen></iframe>
+      <span><p>Kontakt:</p></span>
+      <p>Štefica Tretinjak<br />voditeljica servisa</p>
+      <p>mob: 095 222 5353</p>
+      <p>e-mail: cakumm.pakum@gmail.com</p>
+    </div>
+      <div class="clear"></div>
+  </main>
+  <footer>
+      <p>BUZOV d.o.o.</p>
+  </footer>
+
+
+</body>
+
+</html>
