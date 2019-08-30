@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head lang="hr">
   <meta charset="utf-8">
   <meta name="description" content="Cakum Pakum obrt za čišćenje">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,17 +22,19 @@
         }
       }
     }
-
   </script>
   <script type="text/javascript">
     function showbody(a) {
+      var w = window.innerWidth;
       var x = document.getElementsByClassName("hideme");
 
-      for (var i = 0; i < x.length; i++) {
-        if (i != a) {
-          x[i].style.display = "none";
-        } else {
-          x[i].style.display = "block";
+      if (w <= 800) {
+        for (var i = 0; i < x.length; i++) {
+          if (i != a) {
+            x[i].style.display = "none";
+          } else {
+            x[i].style.display = "block";
+          }
         }
       }
     }
@@ -197,7 +199,7 @@
       <article class="main-art">
         <table class="table table-striped">
           <thead>
-            <th colspan="2" onclick="showbody(3)">ČIŠĆENJE STANOVA I KUČA</th>
+            <th colspan="2" onclick="showbody(3)">ČIŠĆENJE STANOVA I KUĆA</th>
           </thead>
           <tbody class="hideme">
             <tr>
@@ -290,7 +292,21 @@
         </table>
       </article>
 
-      <article class="main-art">
+      <article class="main-art o_nama">
+        <div class="o_nama_head">
+          <b>O NAMA</b>
+        </div>
+        <h5>BUZOV d.o.o.</h5>
+        <h5>Srima x 6</h5>
+        <h5>Srima</h5>
+        <h5>OIB: 58353830902</h5>
+          <br>
+        <p>Novoosnovani smo servis za čišćenje.<br>
+          Vršimo usluge čišćenja i održavanja objekata, ureda, stanova i kuća.<br>
+          Upotrebljavamo moderne uređaje visoke kvalitete (KÄRCHER), ekološka i kvalitetna sredstva za čišćenje.</p>
+          <br>
+        <p> <strong>Vršimo usluge čišćenja u gradu Zagrebu i Zagrebačkoj županiji</strong>  </p>
+
 
       </article>
 
@@ -302,12 +318,16 @@
       <p>Štefica Tretinjak<br />voditeljica servisa</p>
       <p>mob: 095 222 5353</p>
       <p>e-mail: cakumm.pakum@gmail.com</p>
+      <p> <strong>Vršimo usluge čišćenja u gradu Zagrebu i Zagrebačkoj županiji</strong>  </p>
     </div>
       <div class="clear"></div>
   </main>
   <footer>
       <p>BUZOV d.o.o.</p>
   </footer>
+
+
+
 
 
 </body>
