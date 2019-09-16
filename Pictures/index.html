@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="hr">
+  <meta charset="utf-8">
+  <meta name="description" content="Cakum Pakum obrt za čišćenje">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cakum Pakum</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+
+  <script type="text/javascript">
+    function showit(a) {
+      var x = document.getElementsByClassName("main-art");
+
+      for (var i = 0; i < x.length; i++) {
+        if (i != a) {
+          x[i].style.display = "none";
+        } else {
+          x[i].style.display = "block";
+        }
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    function showbody(a) {
+      var w = window.innerWidth;
+      var x = document.getElementsByClassName("hideme");
+
+      if (w <= 800) {
+        for (var i = 0; i < x.length; i++) {
+          if (i != a) {
+            x[i].style.display = "none";
+          } else {
+            x[i].style.display = "block";
+          }
+        }
+      }
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <header class="header-style">
+
+    <img class="logo" src="Pictures/logo_new.png" alt="logo Cakum Pakum">
+
+  </header>
+  <main>
+    <div class="div-l">
+      <ul>
+        <li onclick="showit(0)"><a href="#"><strong>Početna</strong></a></li>
+        <li onclick="showit(6)"><a href="#"><strong>O nama</strong></a></li>
+      </ul>
+      <ul>
+        <li id="usluge"><strong>Usluge:</strong></li>
+        <li>
+          <ul>
+          </ul>
+        <li onclick="showit(1)"><a class="link" href="#">
+            <strong>Čišćenje nakon radova</strong>
+          </a></li>
+        <li onclick="showit(2)"><a class="link" href="#">
+            <strong>Čišćenje poslovnih prostora</strong>
+          </a></li>
+        <li onclick="showit(3)"><a class="link" href="#">
+            <strong>Čišćenje ulaza zgrada</strong>
+          </a></li>
+        <li onclick="showit(4)"><a class="link" href="#">
+            <strong>Čišćenje stanova</strong>
+          </a></li>
+        <li onclick="showit(5)"><a class="link" href="#">
+            <strong>Kemijsko čišćenje</strong>
+          </a></li>
+      </ul>
+      </li>
+      </ul>
+    </div>
+    <div class="div-m">
+      <article class="main-art displ pocetna">
+        <p> Cakum pakum je privatni servis za čišćenje i održavanje poslovnih i stambenih prostora.<br>
+            Pružamo širok spektar usluga na području Zagreba i Zagrebačke županije, a po dogovoru i u drugim županijama.<br>
+            Ozbiljan pristup poslu, kvalitetna usluga i zadovoljstvo naših klijenata je ono što nam je na prvom mjestu.<br>
+            Usluge vršimo prema unaprijed dogovorenim terminima uz obavezan izvid lokacije.<br>
+            Služimo se najmodernijim uređajima marke Kärcher, ekološkim sredstvima za čišćenje njemačkih i švicarskih proizvođača.<br>
+            Sastavni dio strategije jest i procedura stroge kontrole kvalitete rada na terenu<br>
+            s ciljem postizanja i održavanja visokog standada usluge i zadovoljstva klijenata.
+        </p>
+        <div class="pocetna_div">
+          <img class="im" src="Pictures/2019-09-16_10.06.02.jpeg" alt="Čišćenje stana">
+          <p>Doma je najljepše!<br>
+              Dozvolite nam da vaš kutak učinimo besprijekornim.</p>
+          <img class="im" src="Pictures/meetingroom.jpg" alt="meetingroom">
+          <p>Svaki poslovni prostor treba biti uredan, čist i blistav. Produktivnost vaših zaposlenika bit će veća ako im je radno okruženje čisto,
+            mirisno i uredno. Ukoliko radite direktno s kupcima odmah ce primijetiti da je vaš prostor vaše ogledalo.</p>
+        </div>
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2" onclick="showbody(0)">ČIŠĆENJE NAKON GRAĐEVINSKIH I ADAPTCIJSKIH RADOVA</th>
+          </thead>
+            <tbody class="hideme">
+              <tr>
+                <td>Čišćenje prostora do 500m<sup>2</sup></td>
+                <td>11-22 kn/m<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td>Čišćenje prostora većeg od 500<sup>2</sup></td>
+                <td>8 - 20 kn/m<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+              </tr>
+            </tbody>
+        </table>
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2" onclick="showbody(1)">ČIŠĆENJE POSLOVNIH PROSTORA</th>
+          </thead>
+          <tbody class="hideme">
+            <tr>
+              <td>Generalno čišćenje</td>
+              <td>10 – 22 kn po m<sup>2</sup></td>
+            </tr>
+          <th colspan="2">ČIŠĆENJE UZ POTPIS UGOVORA</th>
+          <tr>
+            <td>Čišćenje dva puta mjesečno</td>
+            <td>od 600 kn mjesečno</td>
+          </tr>
+          <tr>
+            <td>Čišćenje jednom tjedno</td>
+            <td>od 960 kn mjesečno</td>
+          </tr>
+          <tr>
+            <td>Čišćenje dva puta tjedno</td>
+            <td>od 1440 kn mjesečno</td>
+          </tr>
+          <tr>
+            <td>Čišćenje tri puta tjedno</td>
+            <td>od 2160 kn mjesečno</td>
+          </tr>
+          <tr>
+            <td>Čišćenje pet puta tjedno</td>
+            <td>od 3600 kn mjesečno</td>
+          </tr>
+            <th colspan="2">ČIŠĆENJE POSLOVNIH PROSTORA VEĆIH POVRŠINA</th>
+            <tr>
+              <td>Osnovni paket (jednostavna čišćenja)</td>
+              <td>m<usp>2</usp> = 7 – 9 kn mjesečno<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td>Srednji paket (jednostavna čišćenja, ograničena papirna konfekcija, ograničena kemijska čišćenja i održavanje podnih površina)</td>
+              <td>m<sup>2</sup> = 10 kn mjesečno</td>
+            </tr>
+            <tr>
+              <td>Napredni paket (jednostavna čišćenja, neograničena papirna konfekcija, neograničena kemijska čišćenja, neograničena obrada i održavanje svih podnih površina)</td>
+              <td>m<sup>2</sup> = 11 – 15 kn mjesečno</td>
+            </tr>
+            <tr>
+              <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2" onclick="showbody(2)"></div>ČIŠĆENJE ULAZA ZGRADA</th>
+          </thead>
+          <tbody class="hideme">
+            <th colspan="2">ČIŠĆENJE STUBIŠTA JEDNOM TJEDNO</th>
+            <tr>
+              <td>Zgrade do 4 kata</td>
+              <td>Od 400 kn mjesečno</td>
+            </tr>
+            <tr>
+              <td>Zgrade s više od 4 kata</td>
+              <td>Od 20 kn po stanu mjesečno</td>
+            </tr>
+            <th colspan="2">ČIŠĆENJE STUBIŠTA DVA PUTA TJEDNO UZ POTPIS UGOVORA</th>
+            <tr>
+              <td>Zgrade do 4 kata</td>
+              <td>Od 800 kn mjesečno</td>
+            </tr>
+            <tr>
+              <td>Zgrade s više od 4 kata</td>
+              <td>Zgrade s više od 4 kata</td>
+            </tr>
+            <th colspan="2">JEDNOKRATNO ČIŠĆENJE STUBIŠTA</th>
+            <tr>
+              <td>Zgrade do 4 kata</td>
+              <td>200 kn</td>
+            </tr>
+            <tr>
+              <td>Zgrade s više od 4 kata</td>
+              <td>300 kn</td>
+            </tr>
+            <tr>
+              <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2" onclick="showbody(3)">ČIŠĆENJE STANOVA I KUĆA</th>
+          </thead>
+          <tbody class="hideme">
+            <tr>
+              <td>Generalno čišćenje</td>
+              <td>10 – 22 kn po m<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td>Redovno čišćenje prostora do 45 m<sup>2</sup></td>
+              <td>250 kn po čišćenju</td>
+            </tr>
+            <tr>
+              <td>Redovno čišćenje prostora 45 m<sup>2</sup> – 90 m<sup>2</sup></td>
+              <td>300 kn po čišćenju</td>
+            </tr>
+            <tr>
+              <td>Jednokratno čišćenje</td>
+              <td>75 kn po satu</td>
+            </tr>
+            <tr>
+              <td>Pranje prozora</td>
+              <td>10 kn po m<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="main-art">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2" onclick="showbody(4)">
+              KEMIJSKO ČIŠĆENJE
+            </th>
+          </thead>
+          <tbody class="hideme">
+            <tr>
+              <td>Stolica</td>
+              <td>25 kn</td>
+            </tr>
+            <tr>
+              <td>Tabure</td>
+              <td>50 kn</td>
+            </tr>
+            <tr>
+              <td>Fotelja</td>
+              <td>100 kn</td>
+            </tr>
+            <tr>
+              <td>Dvosjed</td>
+              <td>180 kn</td>
+            </tr>
+            <tr>
+              <td>Trosjed</td>
+              <td>230 kn</td>
+            </tr>
+            <tr>
+              <td>Dječji madrac</td>
+              <td>50 kn</td>
+            </tr>
+            <tr>
+              <td>Madrac za jednu osobu</td>
+              <td>100 kn</td>
+            </tr>
+            <tr>
+              <td>Madrac za dvije osobe</td>
+              <td>200 kn</td>
+            </tr>
+            <tr>
+              <td>Tepih</td>
+              <td>20 kn/m 2 - 50 kn/m 2</td>
+            </tr>
+            <tr>
+              <td>Automobil</td>
+              <td>300 – 500 kn</td>
+            </tr>
+            <tr>
+              <td>Sjedišta i unutrašnjost autobusa</td>
+              <td>3500 kn</td>
+            </tr>
+            <tr>
+              <td>Sjedišta i unutrašnjost kabine kamiona</td>
+              <td>800 kn</td>
+            </tr>
+            <tr>
+              <td colspan="2">*Izražene cijene su aproksimativne, za točan izračun potrebno je izvršiti izvid prostora.</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="main-art o_nama">
+        <div class="o_nama_head">
+          <b>O NAMA</b>
+        </div>
+        <h5>BUZOV d.o.o.</h5>
+        <h5>Srima x 6</h5>
+        <h5>Srima</h5>
+        <h5>OIB: 58353830902</h5>
+          <br>
+        <p>Novoosnovani smo servis za čišćenje.<br>
+          Vršimo usluge čišćenja i održavanja objekata, ureda, stanova i kuća.<br>
+          Upotrebljavamo moderne uređaje visoke kvalitete (KÄRCHER), ekološka i kvalitetna sredstva za čišćenje.</p>
+          <br>
+        <p> <strong>Vršimo usluge čišćenja u gradu Zagrebu i Zagrebačkoj županiji</strong>  </p>
+
+
+      </article>
+
+    </div>
+    <div class="div-r">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1390.5774599220724!2d16.043122725365865!3d45.80834784867217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shr!2shr!4v1565988147902!5m2!1shr!2shr" frameborder="0"
+        style="border:0" allowfullscreen></iframe>
+      <span><p>Kontakt:</p></span>
+      <p>Štefica Tretinjak<br />voditeljica servisa</p>
+      <p>mob: 095 222 5353</p>
+      <p>e-mail: cakumm.pakum@gmail.com</p>
+      <p> <strong>Vršimo usluge čišćenja u gradu Zagrebu i Zagrebačkoj županiji</strong>  </p>
+    </div>
+      <div class="clear"></div>
+  </main>
+  <footer>
+      <p>BUZOV d.o.o.</p>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>
